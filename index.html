@@ -1,9 +1,274 @@
-<html>
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="resources/css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheat Sheet CSS & HTML </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+</head>
 <body>
-  <h1>Denis Akan</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+    <h1>This is my first HTML & CSS Cheat Sheet</h1>
+    <hr>
+    <!--Tables--> 
+    <section class="intro">
+       In this cheatsheet I will try to explain creating different elements in html and css. This cheat sheet is a living document and will be updated regularly
+    </section>
+    <article table>
+        <h2>Table Tags</h2>
+            <p>This table will explain how to create tables in html and how to fill them with data</p>
+        <table>
+            <thead>
+                <th>Tag</th>
+                <th>Name</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> < table > </td>
+                    <td> Table </td>
+                    <td>The wrapper element of all html tables</td>
+                </tr>
+                <tr>
+                    <td>< Thead > </Thead>></td>
+                    <td>Table head</td>
+                    <td>The set of rows defining the column headers in a table</td>
+                </tr>
+                <tr>
+                    <td>< tbody > </td>
+                    <td>Table body</td>
+                    <td>The set of rows containing the actual table data</td>
+                </tr>
+                <tr>
+                    <td>< tr ></td>
+                    <td>Table row</td>
+                    <td>The table row container</td>
+                </tr>
+                <tr>
+                    <td>< td > </td>
+                    <td>Table data</td>
+                    <td>The cell content</td>
+                </tr>
+                <tr>
+                    <td>< tfoot ></td>
+                    <td>Table Foot</td>
+                    <td>The set of rows defining the footer in a table</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Explainer</p>
+        <ul>
+            <li>Tables are opened wit a < table > everything that follows is nested within this table element </li>
+            <li>The table head is created with < thead > and closed before the body starts</li>
+            <li>Next comes < tbody > which indicates the table body</li>
+            <li>Within the body there are several rows < tr > each row needs to be filled with data < td >. Each row contains several tds </li>
+        </ul>
+    </article table>
+<hr>
+
+<!--Squares--> 
+    <section class="Circles">
+        <h2>Squares</h2>
+            <h3>These are colored squares</h3>
+            <h3>These are colored, overlapping squares</h2>
+        </article circles>
  
+<hr>
+
+<!--Circles--> 
+    <section class="circles">
+        <h2>Circles</h2>
+            <h3>These are colored circles</h3>
+            <h3>These are colored , overlapping circles</h2>
+        </article circles>
+  
+<hr>
+
+<!--Forms--> 
+    <section class="forms">
+        <h2>Forms</h2>
+            <h3>These are forms</h3>
+                <!--textfield--> 
+                <h4>This is a textfield</h4>
+                    <section class="Textfield">
+                        <label for="exampleform">Here you see a text input form</label>
+                        <input type="text" name="exampleform" id="exampleform">
+                    </section>
+                        <br>
+                            What we need to create a basic form is the following:
+                        <ul>
+                            <li>A section with a class. For example < section class = " textfield "></li>
+                            <li>A < label for = "exampleform" > This is the text befire the form < /label > </li>
+                            <li>An < input type = "text" name= "exampleform" id ="exampleform" ></li>
+                        </ul> 
+<hr>    
+                <!--number-->
+                <h4>This is a textbox where i can enter number and it contains and up down button to increase/decrease the count</h4>  
+                    <section class="numbers">
+                        <label for="counter">This is a textbox counter</label>
+                        <input type ="number" name="counter" id="amount">
+                    </section>
+                        <br>
+                            What we need to create a basic textbox is this:
+                        <ul>
+                            <li>A section with a class. For example < section class = " textbox "></li>
+                            <li>A < textarea id = "textbox" name= " textbox " rows="3" cols="40" > < / textarea>  </li>
+                        </ul>
+<hr>    
+                <!--textbox-->
+                <h4>This is a textbox</h4>  
+                    <section class="Textbox">
+                        <label for="textbox">This is a textbox</label>
+                        <br>
+                        <textarea id="textbox" name="textbox" rows="3" cols="40"></textarea>
+                    </section>
+                        <br>
+                            What we need to create a basic textbox is this:
+                         <ul>
+                            <li>A section with a class. For example < section class = " textbox "></li>
+                            <li>A < textarea id = "textbox" name= " textbox " rows="3" cols="40" > < / textarea>  </li>
+                        </ul>
+<hr>
+                <!--password-->
+                <h4>This is password field</h4>          
+                    <section class="Password">
+                        <label for="password">Enter your password </label>
+                        <input type="password" name="password" id="password">
+                    </section>
+                        <br>
+                            What we need to create a basic form is the following:
+                        <ul>
+                            <li>A section with a class. For example < section class = " password "></li>
+                            <li>A < label for = "password" > Text before the password form < /label > </li>
+                            <li>An < input type = "password" name= "password" id ="password" ></li>
+                        </ul> 
+<hr>    
+                <!--submit-->
+                <h4>This is a submit button </h4>          
+                    <section class="Submit">
+                    <input type="submit" value="Submit">
+                    </section>
+
+                        <br>
+                            What we need to create a basic form is the following:
+                        <ul>
+                            <li>A section with a class. For example < section class = " password "></li>
+                            <li>A < label for = "password" > Text before the password form < /label > </li>
+                            <li>An < input type = "password" name= "password" id ="password" ></li>
+                        </ul>  
+<hr>       
+                <!--Checkboxes-->
+                <h4>Here are checkboxes</h4> 
+                    <section class="Checkboxes">
+                        <span>What toppings do you like on your Burger</spann>
+                        <br>
+                        <input type="checkbox" name="topping" id="lettuce" value="lettuce">
+                        <label for ="lettuce">Lettuce</label> 
+                        <br>
+                        <input type="checkbox" name="topping" id="tomato" value="tomato">
+                        <label for ="tomato">Tomato</label>
+                        <br>
+                        <input type="checkbox" name="topping" id="onion" value="onion">
+                        <label for ="onion">Onion</label>
+                        <br>
+                        <input type="checkbox" name="topping" id="pickle" value="pickle">
+                        <label for="pickle">Pickle</label>
+                    </section>
+                    <br>
+                        What we need for checkboxes is:
+                    <ul>
+                        <li>< input type " checkbox" name "topping" id= "lettuce" value ="lettuce" </li>
+                        <li>< label for ="lettuce "> Lettuce < / label> </li>
+                    </ul>
+<hr>
+                <!--Slider-->
+                <h4>This is a volume slider</h4>  
+                    <section class="Slider">
+                        <label for ="volume">How loud do you like your music?</label>
+                        <br>
+                        <span>quiet</span>
+                        <input type ="range" name="volume" id="volume" value="10" min="1" max="15">
+                        <span>super loud</span>
+                    </section>
+                    <br>
+                        What we need for checkboxes is:
+                    <ul>
+                        <li>< input type " checkbox" name "topping" id= "lettuce" value ="lettuce" </li>
+                        <li>< label for ="lettuce "> Lettuce < / label> </li>
+                    </ul>
+<hr>
+                <!--Radio Buttons-->  
+                <h4>Those are some radio buttons</h4>
+                    <section class="radiobutton">
+                         <Span> Do you like Coriander? </Span>
+                    <br>
+                    <input type="radio" name="coriander" id="yes" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="coriander" id="no" value="yes">
+                    <label for="no">Yuck, no way</label>
+                    <input type="radio" name="coriander" id="maybe" value="yes">
+                    <label for="maybe">I don't know</label>
+                    <br>
+                    </section>
+                    Here's how radiobuttons work:
+                    <ul>
+                        <li>Create an Input type = radio with a name, an id and a value= " yes " - </li>
+                        <li>The id defines the name of the answer, for example: yes / no / maybe</li>
+                        <li>The value should be set to yes as it indicates that a particular ID was selected</li>
+                        <li>The value should be set to yes as it indicates that a particular ID was selected</li>
+                        <li>Next we create a label for each possible id. "yes / no / maybe" and give it a name that will be displayed next to the radio button </li>
+                    </ul>
+                    <ol>
+                         <li> < input type = "radio" name = "coriander" id = "yes" value = "yes" > </li>
+                         <li>< label = for = "yes" > Yes < / label > </li>
+                    </ol>
+<hr>
+                <!--Drop Down Menu-->  
+                <h4>Drop down stuff</h4>
+                <section class="dropdown">
+                    <label for "dropdown">Here's a drop down menu with options</label>
+                    <select name="dropdown" id="dropdown">
+                        <option value="option 1">option 1</option>
+                        <option value="option 2">option 2</option>
+                        <option value="option 3">option 3</option>
+                    </select>
+                </section>
+                Here's how drop downs work:
+                <ul>
+                    <li>Start by creating a label for "dropdown" and within the braces you put in the text that goes before the menu. Then close the label </li>
+                    <li>Create a selector with the name "dropdowm" with it's own id</li>
+                    <li>Within the selector you create different options with definded values and the name for them that will be displayed</li>
+                    >
+                </ul>
+                <br> It should look like this;
+                <ol>
+                    <li> < label for " dropdown" > Heres the text before the dropdown < / label ></li>
+                    <li>< select name = "dropdown" id="dropdown" ></li>
+                    <li>< option value = "option 1" > Option 1 < / option ></li>
+                    <li>< option value = "option 2" > Option 2 < / option ></li>
+                    <li> < / select> </li>
+                </ol>
+<hr>
+                <!--Datalist-->  
+                <h4>And here's a datalist</4>
+                <section class="datalist">
+                    <label for "condiment"> What are your favorite condiments </label>
+                    <input list="condiments" name="condiment" id="condiment">
+                    <datalist id="condiments">
+                        <option value="ketchup"></option>
+                        <option value="mayo"></option>
+                        <option value="mustard"></option>
+                        <option value="bbq"></option>
+                        <option value="sriracha"></option>
+                        <option value="hotsauce"></option>
+                    </datalist>
+                </section>
+
+</article>
+
+</body>
 </html>
